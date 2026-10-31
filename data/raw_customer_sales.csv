@@ -1,0 +1,11 @@
+Customer_ID,Name,Age,City,Purchase_Amount,Purchase_Date
+C001,Asha,25,Bengaluru,1500,2026-10-01
+C002,Rahul,thirty,mumbai,2200,2026-10-02
+C003,Priya,29,Delhi,1800,2026-10-03
+C004,Arjun,35,Pune,3000,2026-10-04
+C004,Arjun,35,Pune,3000,2026-10-04
+C005,Neha,,BENGALURU,2500,2026-10-05
+C006,Vikram,42,,,not available
+C007,Sara,31,Chennai,1700,2026-10-07
+C008,Kiran,27,Delhi,invalid,2026-10-08
+C009,Meera,24,Mumbai,1200,2026-10-09
