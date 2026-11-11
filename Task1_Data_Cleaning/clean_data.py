@@ -5,11 +5,16 @@ from pathlib import Path
 # --------------------------------------------------
 # 1. Load the original dataset
 # --------------------------------------------------
-data_folder = Path("data")
+# Use the data folder located beside this Python script
+script_folder = Path(__file__).resolve().parent
+data_folder = script_folder / "data"
+
 raw_file = data_folder / "raw_customer_sales.csv"
 clean_file = data_folder / "cleaned_customer_sales.csv"
 
 df = pd.read_csv(raw_file)
+
+original_rows = len(df)
 
 print("ORIGINAL DATASET SHAPE:", df.shape)
 
@@ -97,7 +102,7 @@ print(df.duplicated().sum())
 # --------------------------------------------------
 df.to_csv(clean_file, index=False)
 
-print("\nOriginal rows after loading:", 10)
+print("\nOriginal rows:", original_rows)
 print("Final rows:", len(df))
 print("Cleaned file saved to:", clean_file)
 print("\nTask 1 cleaning completed successfully!")
